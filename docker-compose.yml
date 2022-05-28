@@ -1,0 +1,16 @@
+version: "3"
+services:
+  server:
+    build: .
+    volumes:
+      - ./:/go/src
+    environment:
+      CONFIG_ENV: "local"
+      TZ: Asia/Tokyo
+    ports:
+      - "8080:8080"
+    networks:
+      - app
+networks:
+  app:
+    external: true
