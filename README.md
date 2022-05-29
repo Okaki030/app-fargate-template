@@ -7,7 +7,12 @@
 ## 使い方
 CI/CDを動かすための設定を記述する。
 
-### 1. GitHub Secretsの設定
+### 1. Actions secretsの設定
+GitHub Actions内で使用するActions secretsの設定を行う。
+
+- AWS_ACCESS_KEY_ID: IAMユーザーのアクセスキー 
+- AWS_SECRET_ACCESS_KEY: IAMユーザーのシークレットアクセスキー
+- AWS_ASSUME_ROLE_ARN: デプロイに必要な権限を持つAssume RoleのARN
 
 <img width="757" alt="スクリーンショット 2022-05-28 12 32 58" src="https://user-images.githubusercontent.com/36916494/170808323-99f6aadb-e225-4128-a76d-173196dc93b1.png">
 
