@@ -27,6 +27,13 @@ $ docker build -t template-app .
 $ docker tag template-app:latest {ECRリポジトリ}:latest
 $ docker push {ECRリポジトリ}:latest
 ```
+
+### デプロイ
+
+```
+$ SYSTEM_NAME=template IMAGE_TAG=latest AWS_REGION=ap-northeast-1 ecspresso deploy --config=config.yaml
+```
+
 ## 参考
 [Build your Go image | Docker Documentation](https://docs.docker.com/language/golang/build-images/)
 [olliefr/docker-gs-ping: A simple Go server example for Docker's "Getting Started with Docker and Go".](https://github.com/olliefr/docker-gs-ping)
