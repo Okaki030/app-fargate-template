@@ -75,5 +75,5 @@ $ SYSTEM_NAME=template IMAGE_TAG=latest AWS_REGION=ap-northeast-1 ecspresso depl
 ### サービスの作成
 
 ```
-SYSTEM_NAME=template IMAGE_TAG=latest AWS_REGION=ap-northeast-1 ecspresso create --config=config.yaml 
+$ SYSTEM_NAME=template IMAGE_TAG=latest AWS_REGION=ap-northeast-1 ecspresso create --config=config.yaml 
 ```
